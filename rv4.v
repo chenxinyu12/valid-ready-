@@ -1,4 +1,5 @@
-
+//4) 假定valid和ready信号都不满足时序要求，都需要用寄存器打一拍，实现该总线握手场景；
+//思路：将rv2与rv3结合即可，注意接口的对应关系
 module rv4 #(parameter wd = 4)(
 	input clk, rst,
 	input [wd-1:0] datain,
